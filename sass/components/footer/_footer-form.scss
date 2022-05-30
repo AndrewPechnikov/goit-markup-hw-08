@@ -1,0 +1,72 @@
+.footer-form {
+  display: flex;
+  flex-direction: column;
+
+  &__service-class {
+    display: flex;
+    direction: row;
+  }
+}
+
+.footer-form__input {
+  width: 358px;
+  height: 50px;
+  align-self: flex-start;
+
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $white-font-color;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: $footer-background-color;
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form {
+  &__button-sercises {
+    position: relative;
+  }
+
+  &__button {
+    background-color: $focus-color;
+    width: 200px;
+    height: 50px;
+    align-self: flex-end;
+
+    padding-left: 29px;
+    padding-right: 62px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white-font-color;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px;
+    border-radius: 4px;
+  }
+
+  &__icon-button {
+    position: absolute;
+    right: 28px;
+    top: 13px;
+
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../image/iconSend.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

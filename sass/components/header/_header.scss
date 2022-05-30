@@ -1,0 +1,16 @@
+/* Header */
+
+.header {
+  &__container {
+    display: flex;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 93px;
+  }
+}
