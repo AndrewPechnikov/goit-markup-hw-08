@@ -1,5 +1,11 @@
 .services {
+  display: none;
   padding-top: 0;
+
+  @media screen and (min-width: 1600px) {
+    display: block;
+    
+  }
 }
 
 .services__title {
@@ -23,7 +29,6 @@
 
 .services__list {
   display: flex;
-  flex-wrap: wrap;
   gap: 30px;
 }
 

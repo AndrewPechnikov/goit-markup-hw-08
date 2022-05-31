@@ -1,9 +1,12 @@
 /* Header */
 
 .header {
+
   &__container {
     display: flex;
+    position: relative;
   }
+
 
   &__navigation {
     display: flex;
@@ -11,6 +14,15 @@
   }
 
   &__logo {
-    margin-right: 93px;
+    
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    @media screen and (min-width: $tablet-width){
+      margin-right: 88px;
+      }
+    @media screen and (min-width: $desktop-width){
+      margin-right: 93px;
+      }
   }
 }

@@ -1,0 +1,23 @@
+.burger{
+    position: absolute;
+    right: 0px;
+    top: 10px;
+
+    @media screen and (min-width:$tablet-width){
+        display: none;
+          
+    } 
+}
+
+.burger-logo{
+    
+    fill: black;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .burger:hover &{
+        fill: $focus-color;
+    }
+
+
+}

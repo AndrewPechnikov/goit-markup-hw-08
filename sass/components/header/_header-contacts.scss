@@ -1,7 +1,17 @@
 .header-contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  @media screen and (max-width: $tablet-width){
+    display: none;
+  }
+  @media screen and (max-width: $desktop-width ) and (min-width: $tablet-width) {
+    position: absolute;
+    top: 21px;
+    right: 0px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    margin-left: auto;
+  }
 
   &__link {
     display: flex;
@@ -20,10 +30,24 @@
       color: $focus-color;
     }
   }
+
+  @media screen and (max-width: $phone-width) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (max-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 30px;
+  }
 }
 
 .contacts {

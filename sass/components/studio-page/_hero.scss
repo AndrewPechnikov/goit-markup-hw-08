@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   text-align: center;
 
@@ -16,18 +16,29 @@
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
 
   color: $white-font-color;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+  max-width: 696px;
+
+  font-size: 44px;
+  line-height: 1.36;
+  }  
+  
 }
 
 .hero__button {
