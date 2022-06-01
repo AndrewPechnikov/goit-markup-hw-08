@@ -24,9 +24,12 @@
     margin: 0;
   }
 
-  @media screen and (min-width:$phone-width) {
-    &__item {
-      width: 450px;
+  &__item {
+    width: 450px;
+    @media screen and (max-width: (($tablet-width)-1)){
+      &:not(:last-child){
+        margin-bottom: 30px ;
+      }
     }
   }
 
@@ -47,8 +50,8 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    &__list{
-      flex-wrap:nowrap;
+    &__list {
+      flex-wrap: nowrap;
     }
 
     &__item {

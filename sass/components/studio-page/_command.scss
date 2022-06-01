@@ -1,24 +1,30 @@
 .command {
   background-color: #f5f4fa;
-  background-size:cover;
 }
 
 .command__list {
-  display: flex;
-  gap: 30px;
-  flex-direction: column;
-  align-items: center;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
 .command {
-  @media screen and (min-width: $phone-width) {
-    &__item {
-      width: 450px;
-    }
+  &__item {
+    max-width: 450px;
 
-    &__image {
-      width: 450px;
+    @media screen and (max-width: (($tablet-width)-1)) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
+  }
+
+  &__image {
+    max-width: 450px;
   }
 
   @media screen and (min-width: $tablet-width) {
@@ -30,7 +36,7 @@
       width: 354px;
     }
 
-    &__list{
+    &__list {
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -45,8 +51,8 @@
       width: 270px;
     }
 
-    &__list{
-      flex-wrap:nowrap;
+    &__list {
+      flex-wrap: nowrap;
     }
   }
 
