@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 450px;
+    max-width: 450px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
@@ -25,7 +25,7 @@
   }
 
   &__item {
-    width: 450px;
+    max-width: 450px;
     @media screen and (max-width: (($tablet-width)-1)){
       &:not(:last-child){
         margin-bottom: 30px ;

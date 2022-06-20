@@ -4,22 +4,24 @@
   &__container {
     padding-bottom: 60px;
     padding-top: 60px;
-    gap: 70px;
   }
 }
 
 //left part footer
 .footer {
   &__logo {
-    display: inline-block;
+    display: block;
     color: $white-font-color;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   &__adress {
     margin-top: 0;
     margin-bottom: 9px;
 
+
+    
     color: $white-font-color;
     font-family: 'Roboto';
     font-style: normal;
@@ -27,17 +29,23 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-align: center;
   }
 
   &__mail {
     margin-bottom: 9px;
   }
 
+  &__telephone {
+    margin-bottom: 60px;
+  }
+
   &__mail,
   &__telephone {
-    display: inline-block;
+    display: block;
     color: $white-tanslucent-color;
     font-style: normal;
+    text-align: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -53,11 +61,16 @@
 .footer__title {
   margin: 0;
   margin-bottom: 20px;
-  padding-top: 12px;
+  // padding-top: 12px;
   text-transform: uppercase;
   font-size: 14px;
+  text-align: center;
   line-height: 1.14;
   color: $white-font-color;
+}
+
+.footer__links{
+  margin-bottom: 60px;
 }
 
 //right part footer
